@@ -1,0 +1,60 @@
+<!--pages/admin/index/index.wxml-->
+<!-- 顶部搜索栏 -->
+<view>
+	<view class="search">
+	 <view class="search-in">
+	  <icon type="search" size="16" color="black"/>
+		<navigator class="s-txt" url="/pages/backstage/backstage/goodsSearch/index">
+		  搜索你想要的商品
+		</navigator>
+	 </view>
+</view>
+</view>
+
+<!-- 左侧分类栏 -->
+<view class="sort-product">
+	<view class="nav_left">
+		<block wx:for="{{categories}}" wx:for-item="item" wx:key="{{index}}">
+			<view class="nav-left-items" bindtap="switchLeftTab" daat-id="{{item.categoryId}}">{{item.cateName}}</view>
+		</block>
+	</view>
+</view>
+
+<!-- 右侧商品栏 -->
+<scroll-view srcoll-y class="nav-right">
+ <view class="nav_right_items">
+  <block wx:for="{{goodsList}}" bindtap="switxhLeftTap" wx:key="{{index}}">
+		<view class="goods-items" data-id="{{item._id}}" bindtap="bindViewTap">
+			<view class="goodInfo">
+				<image src="{{item.iconUrl}}"></image>
+				<view class="goodInfo-detail">
+					<view>{{item.name}}</view>
+					<view style="display: flex;flex-direction: row;">
+						<view class="store">库存{{item.storage}}</view>
+						<view class="sale">月售{{item.sales}}</view>
+					</view>
+					<view class="price">￥：{{item.price}}</view>
+				</view>
+			</view>
+			<view class="btn-area">
+			  <view type="mini">编辑</view>
+				<view type="mini">下架</view>
+			</view>
+		</view>
+	</block>
+ </view>
+</scroll-view>
+
+<!-- 底部固定操作按钮 -->
+<view class="footer">
+ <view class="footer-view">
+   <view class="fv-item1">
+	  <image src="/images/manageCate.png"></image>
+		<text style="font-size: 14px;">管理分类</text>
+	 </view>
+	 <view class="fv-item2">
+	  <image src="/images/add.png"></image>
+		<text style="color: white;font-size: 14px;">新建商品</text>
+	 </view>
+ </view>
+</view>

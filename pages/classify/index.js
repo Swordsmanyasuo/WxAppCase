@@ -22,7 +22,8 @@ Page({
       { 
       classify: "未分类", description: "赣南脐橙果肉鲜嫩多汁", name: "脐橙",
       iconUrl: "https://img2.baidu.com/it/u=3789706499,3442127525&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=800",
-      price: 29.9, sales: 999, specification: "250g", status: 1,storage: 999,_id: "2"}]
+      price: 29.9, sales: 999, specification: "250g", status: 1,storage: 999,_id: "2"}
+    ]
   },
   changeCate: function (e) {
     this.setData({

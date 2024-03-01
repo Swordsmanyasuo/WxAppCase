@@ -1,2 +1,26 @@
-<!--pages/cart/index.wxml-->
-<text>pages/cart/index.wxml</text>
+<view class="content">
+  <view class="cartsitem-view" wx:if="{{carts.length}}" wx:for="{{carts}}" wx:key="">
+    <view class="ciview1">
+      <checkbox data-id="{{item.goodsId}}" data-index="{{index}}" checked="{{chceked[index]}}" bindtap="check"></checkbox>
+    </view>
+    <view class="ciview2" bindtap="navigateTo" data-id="{{ item.goodsId }}">
+      <image src="{{ goodsList[index].iconUrl }}" />
+      <view style="margin-left:20rpx;">
+        <view>{{goodsList[index].name }}</view>
+        <text style="color:red">¥ {{ goodsList[index].price }}</text>
+      </view>
+    </view>
+    <view class="ciview3">
+      <view style="display: flex;flex-direction: row;">
+        <view bindtap="decrease" class="quantity-decrease" data-id="{{ item.goodsId }}" data-amount="{{ item.amount }}"></view>
+        <input type="number" class="quantity" maxlength="3" data-id="{{ item.goodsId }}" value="{{ item.amount }}" bindblur="bindKeyInput" />
+        <view bindtap="increase" class="quantity-increase" data-id="{{ item.goodsId }}" data-amount="{{ item.amount }}"></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="button-view" >
+  <button style=" background-color:#48D070" bindtap="confirmOrder" >去结算</button>
+  <button  style=" background-color:red"  bindtap="clear">清空</button>
+</view>

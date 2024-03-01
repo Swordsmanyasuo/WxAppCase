@@ -1,1 +1,95 @@
 /* pages/cart/index.wxss */
+page {
+    background-color: #f8f8f8;
+  }
+  
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cartsitem-view {
+    margin-top: 20rpx;
+    background-color: white;
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .ciview1 {
+    /* checkbox样式 */
+    width: 150rpx;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ciview2 {
+    /* 商品图、名字、价格样式 的view*/
+    width: 50%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .ciview2 image {
+    /* 商品图*/
+    width: 160rpx;
+    height: 120rpx;
+  }
+  .ciview3{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  .quantity-decrease,.quantity-increase,.quantity{
+      display: inline-block;
+      position: relative;
+      width: 25px;
+      height: auto;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      border-color: #ccc;
+      box-sizing: border-box;
+  }
+  .quantity-decrease {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-left: 0;
+  }
+  .quantity-increase{
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: -1px;
+  }
+  .quantity-decrease:before,.quantity-increase:before {
+      content: '';
+      position: absolute;
+      top:11px;
+      left: 6px;
+      width: 12px;
+      height: 1px;
+      background-color: #ccc;
+  }
+  .quantity-increase::after {
+      content: "";
+      position: absolute;
+      top:6px;
+      left: 11px;
+      width: 1px;
+      height: 12px;
+      background-color: #ccc;
+  }
+  
+  /* 按钮样式 */
+  .button-view button{
+      width: 80%;
+      color: white;
+      margin-top: 60rpx;
+  }

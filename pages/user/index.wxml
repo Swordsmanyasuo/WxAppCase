@@ -1,2 +1,33 @@
 <!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<!-- 用户个人信息 -->
+<view class="userinfo">
+ <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+ <open-data type="userNickName" class="userinfo-nickname"></open-data>
+</view>
+
+<!-- 列表项部分 -->
+<view class="list-view">
+	<view style="background-color: white;width: 100%;">
+		<view wx:for="{{items}}" style="margin-top: 30rpx;">
+			<navigator class="list-itemview" data-path="{{item.path}}" data-index="{{index}}">
+			 <view style="display: flex;">
+			  <image class="icon-item" src="{{item.icon}}"></image>{{item.text}}
+			 </view>
+			 <image style="width: 40rpx;height: 40rpx;" src="../../images/more.png"></image>
+			</navigator>
+			 <view class="line-view"></view>
+		</view>
+	</view>
+	<view style="background-color: white;width: 100%;margin-top: 15px;">
+		<view wx:for="{{setting}}" style="margin-top: 30rpx;">
+		  <navigator class="list-itemview" data-path="{{item.path}}" data-index="{{}}index">
+			 <view style="display: flex;">
+				<image class="icon-item" src="{{item.icon}}"></image>{{item.text}}
+			 </view>
+			 <image style="width: 40rpx;height: 40rpx;" src="../../images/more.png"></image>
+			</navigator>
+			<view class="line-view"></view>
+		</view>
+	</view>
+</view>
+

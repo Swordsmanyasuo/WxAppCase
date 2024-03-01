@@ -5,62 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    items:[
+      {icon:'../../images/iconfont-order.png',text:'我的订单',path:'/pages/order/list/index'},
+      {icon:'../../images/iconfont-addr.png',text:'收货地址',path:'/pages/address/list/index'},
+      {icon:'../../images/iconfont-kefu.png',text:'联系客服',path:''},
+      {icon:'../../images/iconfont-order.png',text:'常见问题',path:'/pages/hlep/list/index'},
+    ],
+    setting:[{ icon:'../../images/iconfont-clear.png',text:'清除缓存',path:'0.0KB'},
+    {icon:'../../images/iconfont-about.png',text:'关于我们',path:'/pages/about/index'},]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
 })
