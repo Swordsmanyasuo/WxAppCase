@@ -1,12 +1,50 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/cart/index",
+    "pages/classify/index",
+    "pages/user/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "backgroundColor": "#f8f8f8",
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "扶贫超市",
+    "navigationBarBackgroundColor": "#48d070",
+    "onReachBottomDistance": 50,
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color":"#999999",
+    "selectedColor":"#48D070",
+    "borderStyle":"white",
+    "backgroundColor":"#ffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"images/iconfont-home.png",
+        "selectedIconPath":"images/iconfont-home-active.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "iconPath":"images/iconfont-list.png",
+        "selectedIconPath":"images/iconfont-list-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "iconPath":"images/iconfont-cart.png",
+        "selectedIconPath":"images/iconfont-cart-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath":"images/iconfont-user.png",
+        "selectedIconPath":"images/iconfont-user-active.png",
+        "text": "我的"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",
