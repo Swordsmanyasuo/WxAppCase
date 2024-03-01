@@ -1,2 +1,2 @@
 # Poverty-Alleviation-Supermarket
-扶贫超市云开发+小程序
+扶贫超市小程序+云开发
