@@ -1,2 +1,54 @@
-<!--pages/index/index.wxml-->
-<text>123</text>
+
+<!-- 轮播图部分 -->
+<view class="body">
+	<view class="swiper_view">
+	 <swiper class="swiper_box" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" current="{{ current }}" interval="{{ interval }}" duration=" {{ duration }}" circular="{{ circular }}" bindchange="swiperchange" indicator-active-color='white'>
+			<block wx:for="{{ images}}" wx:key="index">
+				<swiper-item><image src="{{ item }}" class="slide-image"></image></swiper-item>
+			</block>
+	 </swiper>
+	</view>
+</view>
+
+<!-- 分类 -->
+<view class="category-view">
+ <block wx:for="{{categoryContents}}">
+  <view class="category-box" bindtap="navigateTo" data-catename="{{item.name}}">
+	 <view class="circle-beg" style="background-color: {{item.backgroundColor}};">
+		<image src="{{ item.imgsrc }}"></image>
+	 </view>
+	 <text>{{ item.name }}</text>
+	</view>
+ </block>
+</view>
+
+<!-- 热门推荐 -->
+<view class="content">
+	<view class="content-view1">
+		<image src="../../images/content2-bar.png" bindtap="navigateTo" data-catename="水果"></image>
+	</view>
+	<view class="content-view2">
+		<view>
+			<view style="float: left;width: 8rpx;height: 40rpx; background-color: #000;"></view>
+			<text style="margin-left: 15rpx">热门推荐</text>
+		</view>
+		<view style="display: flex;align-items: center;">
+		 <text style="float: right;">更多</text>
+		 <image src="../../images/more.png"></image>
+		</view>
+	</view>
+	<view class="content-view3">
+	  <view class="cv3-item1">
+		 <image src="../../images/cv3image1.png" bindtap="navigateTo"
+		 data-catename="水果"></image>
+		 <image src="../../images/cv3image3.png" bindtap="navigateTo"
+		 data-catename="水果"></image>
+		</view>
+		<view class="cv3-item1">
+		 <image src="../../images/cv3image2.png" bindtap="navigateTo"
+		 data-catename="特产"></image>
+		 <image src="../../images/cv3image4.png" bindtap="navigateTo"
+		 ></image>
+		</view>
+	</view>
+</view>

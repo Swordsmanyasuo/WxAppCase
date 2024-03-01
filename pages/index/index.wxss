@@ -1,0 +1,95 @@
+
+/* swiper部分样式 */
+.body{
+	width: 100%;
+	height: 350rpx;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.swiper_view {
+	height: 300rpx;
+	width: 90%;
+}
+swiper-item image {
+	width: 100%;
+	height: 300rpx;
+	border-radius: 30rpx;
+	border: 1px solid #80c0000f;
+}
+
+/* 分类样式 */
+.category-view {
+	height: 300rpx;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.category-box {
+	display: flex;
+	height: 150rpx;
+	width: 180rpx;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.circle-beg {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.circle-beg image {
+	height: 60rpx;
+	width: 60rpx;
+}
+
+/* 热门推荐 */
+.content {
+	margin-top: 10rpx;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content-view1 {
+	margin-top: 40rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content-view1 image {
+	height: 200rpx;
+	border-radius: 60rpx;
+}
+.content-view2 {
+	margin-top: 30rpx;
+	display: flex;
+	width: 88%;
+	justify-content: space-between;
+}
+.content-view2 image {
+	width: 30rpx;
+	height: 30rpx;
+}
+.content-view3{
+	width: 90%;
+	display: flex;
+}
+.cv3-item1 {
+	width: 52%;
+	height: 400rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cv3-item1 image {
+	width: 90%;
+	margin-top: 30rpx;
+	height: 50%;
+	border-radius: 20rpx;
+}
+
