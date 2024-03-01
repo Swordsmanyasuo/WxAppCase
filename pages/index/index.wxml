@@ -2,7 +2,7 @@
 <!-- 轮播图部分 -->
 <view class="body">
 	<view class="swiper_view">
-	 <swiper class="swiper_box" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" current="{{ current }}" interval="{{ interval }}" duration=" {{ duration }}" circular="{{ circular }}" bindchange="swiperchange" indicator-active-color='white'>
+	 <swiper class="swiper_box" indicator-dots="{{ indicatorDots }}" autoplay="{{ autoplay }}" current="{{ current }}" interval="{{ interval }}" duration=" {{ duration }}" circular="{{ circular }}"  indicator-active-color='white'>
 			<block wx:for="{{ images}}" wx:key="index">
 				<swiper-item><image src="{{ item }}" class="slide-image"></image></swiper-item>
 			</block>
@@ -12,7 +12,7 @@
 
 <!-- 分类 -->
 <view class="category-view">
- <block wx:for="{{categoryContents}}">
+ <block wx:for="{{categoryContents}}" wx:key="index">
   <view class="category-box" bindtap="navigateTo" data-catename="{{item.name}}">
 	 <view class="circle-beg" style="background-color: {{item.backgroundColor}};">
 		<image src="{{ item.imgsrc }}"></image>

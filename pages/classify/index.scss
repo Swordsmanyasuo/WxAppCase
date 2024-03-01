@@ -1,1 +1,53 @@
-/* pages/classify/index.wxss */
+// 头部分类
+.menubar {
+    height: 100rpx;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    white-space: nowrap;
+  }
+  .menu {
+    height: 100rpx;
+    line-height: 80rpx;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rpx;
+  }
+  .menu text {
+    display: inline-block;
+    width: 110rpx;
+    font-size: 13pt;
+    height: 100%;
+    text-align: center;
+    margin-left: 20rpx;
+    margin-right: 16rpx;
+  }
+  .menu text.active {
+    color: #48d070;
+    font-size: 15pt;
+  }
+
+// 商品列表
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  .waterfall-view {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  .good-box {
+    width: 45%;
+    margin: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .good-box image {
+    width: 300rpx;
+    height: 200rpx;
+  }

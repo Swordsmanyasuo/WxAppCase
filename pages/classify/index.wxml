@@ -1,2 +1,24 @@
-<!--pages/classify/index.wxml-->
-<text>pages/classify/index.wxml</text>
+<scroll-view scroll-x="true" class="menubar">
+  <view class="menu">
+    <block wx:for="{{categories}}" wx:key="index">
+      <text class="{{cateId==item.categoryId?'active':''}}" bindtap="changeCate" data-id="{{item.categoryId}}">{{item.cateName}}</text>
+    </block>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y="true" class="content" style="height:{{windowHeight}}px; width: {{windowWidth}}px;" >
+  <view class="content">
+    <view class="waterfall-view">
+    <block wx:for="{{goodsList}}" wx:key="index">
+      <view class="good-box" bindtap="navigateTo" data-id="{{item._id}}">
+        <image src="{{item.iconUrl}}"> 
+        </image>
+        <text>{{item.description}}{{item.specification}}</text>
+       <view style="width:100%"> 
+           <text style="float:left;color:red;font-size:14pt">￥{{item.price}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  </view>
+</scroll-view>
