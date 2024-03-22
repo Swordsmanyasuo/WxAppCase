@@ -1,0 +1,29 @@
+.avatar-wrapper {
+    padding: 0;
+    width: 56px !important;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .avatar {
+    display: block;
+    width: 56px;
+    height: 56px;
+  }
+  
+  .container {
+    display: flex;
+  }
+  .form{
+      display: flex;
+      padding: 0 20rpx;
+  }
+  .form input{
+    margin-left: 180rpx;
+    color: #888;
+  }
+  .btn{
+      margin-top:20px ;
+  }
+  

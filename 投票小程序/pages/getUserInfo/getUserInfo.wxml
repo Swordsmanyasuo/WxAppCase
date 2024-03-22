@@ -1,0 +1,11 @@
+<view data-weui-theme="{{theme}}">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+    <view class="form">
+        <text>昵称</text>
+        <input type="nickname" class="weui-input" placeholder="请输入昵称" bindblur="onInput"/>
+    </view>
+    <button class="btn" bind:tap="saveData">保存</button>
+
+</view>

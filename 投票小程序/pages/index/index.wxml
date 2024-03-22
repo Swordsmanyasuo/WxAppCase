@@ -1,0 +1,53 @@
+<view class="userInfo">
+    <view class="info">
+        <view class="avatar">
+            <image wx:if="{{avatar}}" src="{{avatar}}" mode="aspectFill"/>
+            <image wx:else src="/img/avater.png" mode="aspectFill"/>
+        </view>
+        <view class="nickname">
+            <text wx:if="{{nickName}}">{{nickName}}</text>
+            <text wx:else >未登录</text>
+        </view>
+    </view>
+    <navigator url="/pages/getUserInfo/getUserInfo">
+        <view class="btn">更新资料</view>
+    </navigator>
+    
+</view>
+<view class="title">我的投票</view>
+<view class="mybox">
+    <view class="item">
+        <image src="/img/wochuangjiandebiaodan.png" mode=""/>
+        <text>我创建的</text>
+    </view>
+   <view class="item">
+    <image src="/img/canyu.png" mode=""/>
+    <text>我参与的</text>
+   </view>
+</view>
+<view class="title">创建投票</view>
+<view class="editbox">
+    <view class="item">
+        <image src="/img/chuangjianzuopin.png" mode=""/>
+        <text>创建投票</text>
+    </view>
+    <view class="item">
+        <image src="/img/APPmoban.png" mode=""/>
+        <text>投票模板</text>
+    </view>
+</view>
+<view class="title">实用工具</view>
+<view class="utilbox">
+    <view class="item">
+        <image src="/img/daka1.png" mode=""/>
+        <text>群签到</text>
+    </view>
+    <view class="item">
+        <image src="/img/xingqiuzhushou.png" mode=""/>
+        <text>抽取助手</text>
+    </view>
+    <view class="item">
+        <image src="/img/签到打卡.png" mode=""/>
+        <text>作业打卡</text>
+    </view>
+</view>

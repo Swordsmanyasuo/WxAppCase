@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/create-vote/create-vote",
+    "pages/vote-page/vote-page",
+    "pages/vote-ranking/vote-ranking",
+    "pages/vote-result/vote-result",
+    "pages/getUserInfo/getUserInfo"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "付陈亮-投票小程序3",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/bar/home.png",
+        "selectedIconPath": "img/bar/home-active.png"
+      },
+      {
+        "pagePath": "pages/create-vote/create-vote",
+        "text": "正在投票",
+        "iconPath": "img/bar/tp.png",
+        "selectedIconPath": "img/bar/tp-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
