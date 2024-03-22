@@ -10,7 +10,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/create-vote/create-vote",
+          "pathName": "pages/vote-page/vote-page",
           "query": "",
           "launchMode": "default",
           "scene": null

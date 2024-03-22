@@ -16,10 +16,12 @@
 </view>
 <view class="title">我的投票</view>
 <view class="mybox">
-    <view class="item">
+    <navigator url="/pages/vote-page/vote-page">
+        <view class="item">
         <image src="/img/wochuangjiandebiaodan.png" mode=""/>
         <text>我创建的</text>
     </view>
+    </navigator>
    <view class="item">
     <image src="/img/canyu.png" mode=""/>
     <text>我参与的</text>
@@ -52,4 +54,9 @@
         <image src="/img/签到打卡.png" mode=""/>
         <text>作业打卡</text>
     </view>
+</view>
+
+<view class="footerbox">
+    <text>意见反馈</text>
+    <text>联系客服</text>
 </view>

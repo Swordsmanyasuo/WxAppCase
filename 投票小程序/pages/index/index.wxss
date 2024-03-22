@@ -67,10 +67,18 @@ page {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.footerbox{
+  margin: 40rpx auto;
+  width: 350rpx;
+  display: flex;
+  justify-content: space-around;
+  color: #475680;
+}
+
 .item{
   width: 100%;
   box-sizing: border-box;
-  padding: 60rpx 30rpx;
+  padding: 50rpx 30rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
