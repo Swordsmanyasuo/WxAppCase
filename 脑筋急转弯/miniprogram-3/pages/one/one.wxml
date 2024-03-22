@@ -1,0 +1,6 @@
+<!--pages/one/one.wxml-->
+<view class="vie">
+  <image src="../../images/111.jpg"></image>
+  <button class="ansBtn" bind:tap="goto">点击开始</button>
+</view>
+

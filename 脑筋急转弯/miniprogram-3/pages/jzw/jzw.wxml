@@ -1,0 +1,20 @@
+<!--pages/jzw/jzw.wxml-->
+
+<view class="titleBox">
+<text>{{title}}</text>
+</view>
+<view class="titleBox ansStyle" wx:if="{{switchAns}}">
+{{answer}}
+</view>
+<view class="titleBox" wx:else>
+<button class="ansBtn" bind:tap="btnCheckAns">查看答案</button>
+</view>
+
+<view class="directionImg">
+  <image src="../../images/箭头-左.png" bind:tap="toLeft"></image>
+  <image src="../../images/箭头-右.png" bind:tap="toRight"></image>
+</view>
+
+
+
+

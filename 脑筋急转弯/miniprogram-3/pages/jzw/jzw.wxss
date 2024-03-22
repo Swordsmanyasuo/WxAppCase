@@ -1,0 +1,39 @@
+/* pages/jzw/jzw.wxss */
+/*页面背景色*/
+page{
+  background-color: #f5f4db;
+}
+/**/
+.titleBox{
+  width: 95%;
+  height: 400rpx;
+  border: 1rpx solid #CBC5AE;
+  background-color: #F4EFDB;
+  border-radius: 5pt;
+  margin: 15rpx auto;
+
+}
+
+.ansStyle{
+  font-weight: bold;
+}
+
+.ansBtn{
+  width: 100rpx;
+  height: 80rpx;
+  background-color: #f09d57;
+  color: white;
+  margin: 140rpx auto;
+  text-align: center;
+}
+
+.directionImg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.directionImg image{
+  width: 120rpx;
+  height: 120rpx;
+}
