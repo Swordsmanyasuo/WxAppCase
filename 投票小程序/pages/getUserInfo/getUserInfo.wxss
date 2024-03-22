@@ -25,5 +25,7 @@
   }
   .btn{
       margin-top:20px ;
+      color: #fff;
+      background-color: #07c160;
   }
   

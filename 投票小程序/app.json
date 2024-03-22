@@ -5,6 +5,7 @@
     "pages/vote-page/vote-page",
     "pages/vote-ranking/vote-ranking",
     "pages/vote-result/vote-result",
+    "pages/vote/vote",
     "pages/getUserInfo/getUserInfo"
   ],
   "window": {
@@ -21,7 +22,7 @@
         "selectedIconPath": "img/bar/home-active.png"
       },
       {
-        "pagePath": "pages/create-vote/create-vote",
+        "pagePath": "pages/vote/vote",
         "text": "正在投票",
         "iconPath": "img/bar/tp.png",
         "selectedIconPath": "img/bar/tp-active.png"

@@ -27,10 +27,12 @@
 </view>
 <view class="title">创建投票</view>
 <view class="editbox">
+    <navigator url="/pages/create-vote/create-vote">
     <view class="item">
         <image src="/img/chuangjianzuopin.png" mode=""/>
         <text>创建投票</text>
     </view>
+    </navigator>
     <view class="item">
         <image src="/img/APPmoban.png" mode=""/>
         <text>投票模板</text>

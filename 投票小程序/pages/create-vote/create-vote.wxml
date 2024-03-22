@@ -1,2 +1,86 @@
-<!--pages/create-vote/create-vote.wxml-->
-<text>pages/create-vote/create-vote.wxml</text>
+<!--index.wxml  动态添加Input演示-->
+<view class="container">
+  <view class="box">
+    <view class="title">班长选举</view>
+    <view class="my-cell">计算机214班班会选举</view>
+    <block wx:for="{{conLists}}" wx:key="index">
+        <view class='template_title_list flex-x'>
+        <view class="del" bindtap='del' data-index='{{index}}'>-</view>
+
+        <input placeholder='请填写内容标题' bindinput='changeConTitle' data-index='{{index}}'></input>
+        </view>
+    </block>
+
+    <view class='template_title flex-x' bindtap='add'>
+        <view class='add_con flex-x'>
+        <text>+</text>
+        <view>添加选项</view>
+        </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">设置投票时间</view>    
+    <view class="my-cell">
+        <text>开始时间</text>
+        <view class="picker">
+               <text>2022-03-16 21:00</text>
+               <image class="icon" src="/img/下拉.png" mode=""/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>截至时间</text>
+        <view class="picker">
+                <text>2022-03-17 21:00</text>
+               <image class="icon" src="/img/下拉.png" mode=""/>
+        </view>
+    </view>
+  </view>
+  <view class="box">
+    <view class="my-cell">
+        <text>只允许群成员投票</text>
+        <view>
+                <switch checked="{{false}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>匿名投票</text>
+        <view>
+                <switch checked="{{true}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>允许成员查看投票明细</text>
+        <view>
+                <switch checked="{{true}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>允许成员分享群聊</text>
+        <view>
+                <switch checked="{{true}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>每人参与投票次数</text>
+        <view class="picker">
+               <text>仅限一次</text>
+               <image class="icon" src="/img/下拉.png" mode=""/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>允许投票多选</text>
+        <view>
+                <switch checked="{{false}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+    <view class="my-cell">
+        <text>需要填写个人信息</text>
+        <view>
+                <switch checked="{{false}}" bindchange="switch1Change"/>
+        </view>
+    </view>
+  </view>
+
+  <button class="btn" type="primary" bindtap="next">确定</button>
+</view>

@@ -1,1 +1,119 @@
-/* pages/create-vote/create-vote.wxss */
+page {
+    background: #f2f2f2;
+  }
+  .container{
+      padding: 0 20rpx;
+  }
+  .box{
+      background-color: #fff;
+      padding: 20rpx 30rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 20rpx;
+  }
+  .box .title{
+      padding: 35rpx 0;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .my-cell{
+    padding: 35rpx 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    }
+    .my-cell .picker{
+        font-weight: normal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #888;
+    }
+    .my-cell .picker .icon{
+        width: 50rpx;
+        height: 50rpx;
+        margin-left: 10rpx;
+    }
+
+
+
+  .flex-x {
+    display: flex;
+    align-items: center;
+  }
+  
+  .template_title, .template_title1, .template_title_list {
+    height: 90rpx;
+    background: #fff;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+  }
+  
+  .template_title1 {
+    background: none;
+  }
+  
+  .template_title_list {
+    margin-bottom: 4rpx;
+  }
+  
+  .template_title > view, .template_title1 > view {
+    font-size: 32rpx;
+    color: #8f8f8f;
+    flex-shrink: 0;
+    margin-right: 20rpx;
+  }
+  
+  .template_title > input {
+    font-size: 28rpx;
+    color: #808080;
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  /* 添加内容 */
+  
+  .add_con > text {
+    font-size: 40rpx;
+    color: #f16765;
+    display: block;
+    margin-right: 20rpx;
+    margin-left: 10rpx;
+    line-height: 44rpx;
+  }
+  
+  .add_con > view {
+    font-size: 32rpx;
+    color: #7885cb;
+  }
+  
+  /* 删除内容 */
+  
+  .del {
+    font-size: 32rpx;
+    color: #f16765;
+    margin-right: 14rpx;
+    padding: 20rpx;
+  }
+  
+  input {
+    flex-grow: 1;
+    font-size: 28rpx;
+    color: #808080;
+  }
+  
+  .btn {
+      margin-top: 200rpx;
+    position: relative;
+    bottom: 100rpx;
+  }
+
+
