@@ -1,2 +1,14 @@
-<!--pages/vote-ranking/vote-ranking.wxml-->
-<text>pages/vote-ranking/vote-ranking.wxml</text>
+<view class="title">投票排行</view>
+
+<view class="group">
+        <view wx:for="{{radioItems}}" class="item">
+            <view class="my-cell">
+                <text class="label-2-text">No {{index+1}}：{{item.name}}</text>
+                <text class="text">1 票</text>
+            </view>
+            <view  class="progress-container">
+                 <view class="progress-bar" style="width: 50%;"></view>
+            </view>
+        </view>
+        
+</view>

@@ -1,1 +1,41 @@
-/* pages/vote-ranking/vote-ranking.wxss */
+.title{
+    margin-top: 20rpx;
+    text-align: center;
+    padding-left: 20rpx;
+    font-size: 24px;
+}
+
+.group{
+    margin-top: 30rpx;
+    padding: 0rpx 20rpx;
+}
+.group .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+}
+.my-cell{
+    padding: 20rpx 20rpx;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    }
+.my-cell .text{
+    color: #666;
+    font-weight: normal;
+    font-size: 14px;
+}
+.progress-container {
+    width: 100%;
+    background-color: #f0f0f0; 
+    border-radius: 20rpx; 
+    overflow: hidden; 
+  }
+.progress-bar {
+    height: 10rpx;
+    background-color: #9fd140; 
+    transition: width 0.3s ease; 
+  }

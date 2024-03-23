@@ -14,12 +14,14 @@
 </view>
 
 <view class="util-box">
-    <view class="item">
-        <view class="icon">
-            <image src="/img/排行榜.png" alt=""/>
+    <navigator url="/pages/vote-ranking/vote-ranking">
+        <view class="item">
+            <view class="icon">
+                <image src="/img/排行榜.png" alt=""/>
+            </view>
+            <text>票数排行</text>
         </view>
-        <text>票数排行</text>
-    </view>
+    </navigator>
     <view class="item">
         <view class="icon">
             <image src="/img/明细.png" alt=""/>
@@ -79,7 +81,7 @@
             <view class="my-cell">
                 <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
             <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
-            <text class="text">0 票</text>
+            <text class="text">1 票</text>
             </view>
             <view wx:if="{{!isvote}}" class="progress-container">
                  <view class="progress-bar" style="width: 50%;"></view>
