@@ -1,8 +1,14 @@
 <!--index.wxml  动态添加Input演示-->
 <view class="container">
   <view class="box">
-    <view class="title">班长选举</view>
-    <view class="my-cell">计算机214班班会选举</view>
+    <view class="title">
+        <text>主题</text>
+        <input type="text" placeholder="请填写标题"/>
+    </view>
+    <view class="my-cell">
+        <text>说明</text>
+        <input type="text" placeholder="请填写说明"/>
+    </view>
     <block wx:for="{{conLists}}" wx:key="index">
         <view class='template_title_list flex-x'>
         <view class="del" bindtap='del' data-index='{{index}}'>-</view>

@@ -1,4 +1,5 @@
-<view class="item">
+<navigator url="/pages/vote-detail/vote-detail?title=班级评优">
+    <view class="item">
     <view class="top">
         <view class="info">
             <view class="title">
@@ -28,13 +29,15 @@
         </view>
     </view>
 </view>
+</navigator>
 
 
-<view class="item">
+<navigator url="/pages/vote-detail/vote-detail?title=班长选举">
+    <view class="item">
     <view class="top">
         <view class="info">
             <view class="title">
-                <view class="text">班级评优</view>
+                <view class="text">班长选举</view>
                 <view class="status">进行中</view>
             </view>
             <view class="time">2022-03-16 21:00 至 2022-03-17 21:00</view>
@@ -60,6 +63,9 @@
         </view>
     </view>
 </view>
+</navigator>
 
 
-<view class="btn">+ 创建投票</view>
+<navigator url="/pages/create-vote/create-vote">
+    <view class="btn">+ 创建投票</view>
+</navigator>

@@ -1,2 +1,71 @@
-<!--pages/vote/vote.wxml-->
-<text>pages/vote/vote.wxml</text>
+<navigator url="/pages/vote-detail/vote-detail?title=班级评优">
+    <view class="item">
+    <view class="top">
+        <view class="info">
+            <view class="title">
+                <view class="text">班级评优</view>
+                <view class="status">进行中</view>
+            </view>
+            <view class="time">2022-03-16 21:00 至 2022-03-17 21:00</view>
+        </view>
+        <view class="joinNum">
+            <text style="color: #5a9ef7;font-size: 30px;">1</text>人
+        </view>
+    </view>
+    <view class="bootom">
+        <view class="left">
+            <image class="avatar" src="http://tmp/enFXgLRZU7tg0a8fbd7320953a956ecfc20c0e62dc73.jpeg" mode=""/>
+            <text class="nickName">fcl发起</text>
+        </view>
+        <view class="right">
+            <view class="util">
+                <image  class="icon" src="/img/分享.png" mode=""/>
+                <text>分享</text>
+            </view>
+            <view class="util">
+                <image  class="icon" src="/img/删除.png" mode=""/>
+                <text>删除</text>
+            </view>
+        </view>
+    </view>
+</view>
+</navigator>
+
+
+<navigator url="/pages/vote-detail/vote-detail?title=班长选举">
+    <view class="item">
+    <view class="top">
+        <view class="info">
+            <view class="title">
+                <view class="text">班长选举</view>
+                <view class="status">进行中</view>
+            </view>
+            <view class="time">2022-03-16 21:00 至 2022-03-17 21:00</view>
+        </view>
+        <view class="joinNum">
+            <text style="color: #5a9ef7;font-size: 30px;">1</text>人
+        </view>
+    </view>
+    <view class="bootom">
+        <view class="left">
+            <image class="avatar" src="http://tmp/enFXgLRZU7tg0a8fbd7320953a956ecfc20c0e62dc73.jpeg" mode=""/>
+            <text class="nickName">fcl发起</text>
+        </view>
+        <view class="right">
+            <view class="util">
+                <image  class="icon" src="/img/分享.png" mode=""/>
+                <text>分享</text>
+            </view>
+            <view class="util">
+                <image  class="icon" src="/img/删除.png" mode=""/>
+                <text>删除</text>
+            </view>
+        </view>
+    </view>
+</view>
+</navigator>
+
+
+<navigator url="/pages/create-vote/create-vote">
+    <view class="btn">+ 创建投票</view>
+</navigator>

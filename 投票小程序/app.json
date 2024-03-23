@@ -3,8 +3,8 @@
     "pages/index/index",
     "pages/create-vote/create-vote",
     "pages/vote-page/vote-page",
+    "pages/vote-detail/vote-detail",
     "pages/vote-ranking/vote-ranking",
-    "pages/vote-result/vote-result",
     "pages/vote/vote",
     "pages/getUserInfo/getUserInfo"
   ],

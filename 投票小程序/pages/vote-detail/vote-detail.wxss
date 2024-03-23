@@ -1,0 +1,197 @@
+/* pages/vote-detail/vote-detail.wxss */
+page{
+    background-color: #f8f8f8;
+}
+.bg{
+    width: 100vw;
+    height: 400rpx;
+}
+.zdy{
+    transform: translate(50rpx,-40rpx);
+    width: 200rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    border-radius: 30rpx;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #5a9ef7;
+    background-color: #fefefe;
+    box-shadow: 1px 2px 1px #eee;
+
+}
+.title{
+    padding-left: 20rpx;
+    font-size: 24px;
+}
+.share-box{
+    padding: 20rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.share-box .btns{
+    display: flex;
+    align-items: center;
+}
+.share-box .btns .btn{
+    display: inline-block;
+    padding: 8rpx 12rpx;
+    border-radius: 10rpx;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 10rpx; 
+}
+.share{
+    display: flex;
+    align-items: center;
+}
+.share .icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10rpx;
+}
+.share text{
+    color: #ef903e;
+}
+
+.util-box{
+    padding: 50rpx 20rpx;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .util-box .item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .util-box .item .icon{
+    width: 55px;
+    height: 55px;
+    background-color: #9fd140;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.util-box .item .icon image{
+    width: 30px;
+    height: 30px;
+}
+.util-box .item text{
+    font-size: 15px;
+    color: #333;
+    margin-top: 10rpx;
+}
+
+.illustrate-box{
+    margin-top: 20rpx;
+    padding: 20rpx 20rpx;
+    background-color: #fff;
+
+}
+.illustrate-box .title{
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center; 
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.illustrate-box .title .yd{
+    margin-left: 10rpx;
+    margin-right: 20rpx;
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background-color: #8ed5fa;
+}
+.illustrate-box .box{
+    padding: 20rpx 20rpx;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px #f2f3f5
+}
+.illustrate-box .box .text{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-weight: normal;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+.illustrate-box .box .content{
+    padding: 20rpx 0;
+    display: flex;
+    flex-direction: column;
+}
+.group-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;font-weight: bold; font-size: 20px;margin-top: 40rpx;
+}
+.group-title .fk{
+    margin-left: 15rpx;
+    margin-right: 20rpx;
+    width: 15rpx;
+    height: 40rpx;
+    background-color: #9fd140;
+}
+
+.group{
+    margin-top: 60rpx;
+    padding: 0rpx 20rpx;
+}
+.group .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+}
+.my-cell{
+    padding: 20rpx 20rpx;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    }
+.my-cell radio {
+    margin-right: 20rpx;
+}
+.my-cell .label-2-text{
+    flex: 1;
+}
+.my-cell .text{
+    color: #666;
+    font-weight: normal;
+    font-size: 14px;
+}
+.footer{
+    height: 400rpx;
+    overflow: hidden;
+}
+.vote-btn{
+    margin: 50rpx 0 60rpx;
+    color: #fff;
+}
+.progress-container {
+    width: 100%;
+    background-color: #f0f0f0; 
+    border-radius: 20rpx; 
+    overflow: hidden; 
+  }
+.progress-bar {
+    height: 10rpx;
+    background-color: #9fd140; 
+    transition: width 0.3s ease; 
+  }
+.link{
+    text-align: center;
+    color: #66a5f8;
+}
+

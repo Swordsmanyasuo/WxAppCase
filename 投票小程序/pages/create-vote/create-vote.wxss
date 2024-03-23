@@ -12,6 +12,13 @@ page {
       justify-content: flex-start;
       margin-bottom: 20rpx;
   }
+  .box input{
+    font-weight: normal;
+    margin-left: 40rpx;
+  }
+  .box input::placeholder {
+    color: #7885cb;
+  }
   .box .title{
       padding: 35rpx 0;
     font-size: 20px;
@@ -29,18 +36,18 @@ page {
     align-items: center;
     border-bottom: 1px solid #e6e6e6;
     }
-    .my-cell .picker{
-        font-weight: normal;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #888;
-    }
-    .my-cell .picker .icon{
-        width: 50rpx;
-        height: 50rpx;
-        margin-left: 10rpx;
-    }
+  .my-cell .picker{
+      font-weight: normal;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #888;
+  }
+  .my-cell .picker .icon{
+      width: 50rpx;
+      height: 50rpx;
+      margin-left: 10rpx;
+  }
 
 
 

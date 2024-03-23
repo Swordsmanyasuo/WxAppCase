@@ -1,0 +1,95 @@
+<image class="bg" src="/img/d8a3d5d018fa09b98fb74fc84b5de9f7.png" mode=""/>
+<view class="zdy">自定义背景</view>
+<view class="title">班长选举</view>
+
+<view class="share-box">
+    <view class="btns">
+        <view class="btn" style="background-color: #f5c543;">匿名</view>
+        <view class="btn" style="background-color: #67a6f4;">仅限一次投票</view>
+    </view>
+    <view class="share">
+        <image class="icon" src="/img/分享 (2).png" mode=""/>
+        <text>分享至群</text>
+    </view>
+</view>
+
+<view class="util-box">
+    <view class="item">
+        <view class="icon">
+            <image src="/img/排行榜.png" alt=""/>
+        </view>
+        <text>票数排行</text>
+    </view>
+    <view class="item">
+        <view class="icon">
+            <image src="/img/明细.png" alt=""/>
+        </view>
+        <text>投票明细</text>
+    </view>
+    <view class="item">
+        <view class="icon">
+            <image class="icon" src="/img/复制.png" alt=""/>
+        </view>
+        <text>复制投票</text>
+    </view>
+    <view class="item">
+        <view class="icon">
+            <image src="/img/导出.png" alt=""/>
+        </view>
+        <text>导出记录</text>
+    </view>
+    <view class="item">
+        <view class="icon">
+            <image src="/img/签到.png" alt=""/>
+        </view>
+        <text>签到打卡</text>
+    </view>
+</view>
+
+<view class="illustrate-box">
+    <view class="title">
+        <view class="yd"></view>
+        <view class="yd"></view>
+        <text>投票说明</text>
+        <view class="yd"></view>
+        <view class="yd"></view>
+    </view>
+    <view class="box">
+        <view class="text">
+            说明：计算机214班选举班长
+        </view>
+        <view class="content">
+            <text>1、本次投票为匿名单选投票</text>
+            <text>2、参与投票后可查看票数和投票明细</text>
+            <text>3、本次投票每人可投1票。</text>
+            <text>4、投票后无法撤回和修改</text>
+            <text>5、本次投票会记录 (头像,昵称) 信息。</text>
+              
+        </view>
+    </view>
+</view>
+<view class="group-title" >
+        <view class="fk"></view>
+        <text>距离投票结束还有</text>
+        <view class="fk"></view>
+</view>
+
+<radio-group class="group" bindchange="radioChange">
+        <view wx:for="{{radioItems}}" class="item">
+            <view class="my-cell">
+                <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+            <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
+            <text class="text">0 票</text>
+            </view>
+            <view wx:if="{{!isvote}}" class="progress-container">
+                 <view class="progress-bar" style="width: 50%;"></view>
+            </view>
+        </view>
+        
+</radio-group>
+
+<view class="footer">
+    <button wx:if="{{isvote}}" class="vote-btn" type="primary" bindtap="next">可投一票</button>
+    <button wx:else class="vote-btn" type="default" bindtap="next">已投票</button>
+    <view class="link">联系客服</view>
+</view>

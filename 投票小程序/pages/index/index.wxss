@@ -58,7 +58,6 @@ page {
   gap: 30rpx;
 }
 .editbox{
-  margin-top: 20rpx;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30rpx;
