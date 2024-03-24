@@ -1,0 +1,25 @@
+<!--pages/demo10-2/scroll-view.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='title'>scroll-view编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、设置scroll-y视图纵向滚动</view>
+      <scroll-view scroll-y="true" bindscrolltoupper="upper" 
+                 bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="content1">
+        <view id="content1" class='scroll-item-y'>内容1</view>
+        <view id="content2" class='scroll-item-y'>内容2</view>
+        <view id="content3" class='scroll-item-y'>内容3</view>
+      </scroll-view>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、设置scroll-x横向滚动</view>
+      <scroll-view scroll-x scroll-into-view="B" scroll-top="{{100}}">
+        <view id="A" class='scroll-item-x'>A</view>
+        <view id="B" class='scroll-item-x'>B</view>
+        <view id="C" class='scroll-item-x'>C</view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,30 @@
+<!--pages/demo10-4/progress.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='title'>progress编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、percent属性控制进度条显示百分比</view>
+      <progress percent='25' show-info />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、stroke-width属性线条宽度10</view>
+      <progress stroke-width='10' show-info />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>3、进度条颜色</view>
+      color属性定义已完成部分进度条颜色
+      <progress color="red" percent='60' show-info />
+       activeColor属性定义已完成部分进度条颜色
+      <progress activeColor="blue" percent='60' show-info />
+      backgroundColor属性定义未完成部分进度条颜色
+      <progress backgroundColor="lightgreen" percent='60' show-info />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>4、active属性动态进度条</view>
+      <progress color="#FFB6C1" active percent='60' show-info />
+    </view>
+  </view>
+</view>
+
+
+

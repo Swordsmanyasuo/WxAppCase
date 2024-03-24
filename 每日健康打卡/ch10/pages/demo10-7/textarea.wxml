@@ -1,0 +1,31 @@
+<!--pages/demo10-7/textarea.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>textarea多行输入框编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、auto-height属性高度自适应</view>
+      <textarea auto-height placeholder="默认单行，高度自适应，无滚动条" />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、自定义placeholder颜色</view>
+      <textarea auto-height placeholder-style="color:red" placeholder="自定义placeholder为红色" />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>3、被禁用状态</view>
+      <textarea placeholder="该文本框已被禁用" disabled />
+    </view>
+    <view class='demo-box'>
+      <view class='title'>4、多行输入框事件监听</view>
+      （1）bindinput属性,获取到输入的值为：{{inputValue1}}
+      <textarea bindinput="onInput" /> 
+      （2）bindfocus属性,获取到输入值：{{inputValue2}},键盘高度：{{keyBoardHeight}}
+      <textarea bindfocus="onFocus" /> 
+      （3）bindconfirm属性,点击完成键（或回车键）获取到输入值：{{inputValue3}}
+      <textarea bindconfirm="onConfirm" /> 
+      （4）bindblur属性,输入框失去焦点时获取到输入值：{{inputValue4}}
+      <textarea bindblur="onBlur" />
+    </view>
+  </view>
+</view>
+
+

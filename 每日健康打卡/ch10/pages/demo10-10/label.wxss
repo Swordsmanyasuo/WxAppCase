@@ -1,0 +1,5 @@
+/* pages/demo10-10/label.wxss */checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-self: start; /*使选项靠左对齐*/
+}

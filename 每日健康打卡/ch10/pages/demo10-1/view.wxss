@@ -1,0 +1,23 @@
+/* pages/demo10-1/view.wxss */
+
+.parent_view {
+  width: 100%;
+  height: 300rpx;
+  background-color: lightpink;
+  border: 1rpx solid black;
+  font-size: 28rpx;
+}
+
+.child_view {
+  width: 60%;
+  height: 180rpx;
+  margin-left: 20%;
+  margin-top: 40rpx;
+  background-color:lightyellow;
+  border: 1rpx solid black;
+  font-size: 28rpx;
+}
+
+.view_hover {
+  background-color: red;
+}

@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/daka/daka",
+    "pages/index/index",
+    "pages/demo10-4/progress",
+    "pages/demo10-10/label",
+    "pages/demo10-9/checkbox",
+    "pages/demo10-8/radio",
+    "pages/demo10-7/textarea",
+    "pages/demo10-6/input",
+    "pages/demo10-5/button",
+    "pages/demo10-3/text",
+    "pages/demo10-2/scroll-view",
+    "pages/demo10-1/view"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "第 10 章 组件",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"  
+}

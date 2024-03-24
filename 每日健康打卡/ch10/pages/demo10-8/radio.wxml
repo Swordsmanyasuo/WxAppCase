@@ -1,0 +1,15 @@
+<!-- pages/demo10-8/radio.wxml -->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>radio编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、栈和队列具有相同的是？</view>
+      <radio-group bindchange='radioChange'>
+        <view class='test' wx:for='{{radioItems}}' wx:key='item{{index}}'>
+          <radio value='{{item.value}}' checked='{{item.checked}}' />
+          <text>{{item.chooseitem}}</text>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+</view>

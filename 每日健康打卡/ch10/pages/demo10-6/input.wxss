@@ -1,0 +1,11 @@
+/* pages/demo10-6/input.wxss */
+
+input {
+  margin: 5px;
+  border: 1rpx solid black;
+  width: 100%;
+}
+
+text {
+  font-size: 10pt;
+}

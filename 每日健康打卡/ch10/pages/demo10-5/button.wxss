@@ -1,0 +1,15 @@
+/* pages/demo10-5/buttons.wxss */
+button[size="mini"]{
+  display: block;
+  margin: 5rpx;
+}
+.button-area{
+  display: flex;
+}
+button {
+margin-top: 0rpx;
+margin-bottom: 6rpx;
+}
+.click-class{
+  background-color: red
+}

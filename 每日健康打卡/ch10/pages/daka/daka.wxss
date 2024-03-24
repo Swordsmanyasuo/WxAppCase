@@ -1,0 +1,45 @@
+/* pages/daka/daka.wxss */
+.dakatitle{
+  font-size: x-large;
+  font-family: Arial;
+  font-weight: 600;
+  width: 100%;
+  height: 80rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.rowContainer{
+  display: flex;
+  border: 1rpx solid #E6E6E6;
+  width: 100%; height: 220rpx;
+}
+
+
+.rowContainer1{
+  display: flex;
+  border: 1rpx solid #E6E6E6;
+  width: 100%; height: 100rpx;
+}
+
+.rowTitle{
+  margin-left: 10rpx;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.rowContent{
+  width: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btnStyle{
+  width: 800rpx !important;
+  background-color: #1e90ef;
+  color: #fff;
+}
+.commitHeight{
+  height: 80rpx;
+}

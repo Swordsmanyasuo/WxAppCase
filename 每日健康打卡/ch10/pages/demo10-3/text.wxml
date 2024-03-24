@@ -1,0 +1,22 @@
+<!--pages/demo10-3/text.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='title'>text编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、selectable属性用于文本可选</view>
+      <text selectable>长按文字可以选择文本内容。\n "\\n"用于换行这是第二行</text>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、decode属性用于转义</view>
+      <text>无法解析&nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
+      <text decode>可以解析&nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;</text>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>3、space属性用于控制空格显示形式</view>
+      <text>text默认       文字间有 无数空格会省略成一个空格</text>
+      <text space='ensp'>加上space='ensp'后  空格是中文字符一半大小</text>
+      <text space='emsp'>加上space='emsp'后  空格是中文字符大小</text>
+      <text space='nbsp'>加上space='nbsp'后这段代码   根据字体设置的空格大小。</text>
+    </view>
+  </view>
+</view>

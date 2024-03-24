@@ -1,0 +1,66 @@
+<!--pages/daka/daka.wxml-->
+<form bindsubmit="onSubmit" bindreset="onReset">
+<view class="dakatitle">每日健康打卡</view>
+
+<view class="rowContainer1">
+<view class="rowTitle">日期：</view>
+<view class="rowContent">
+{{today}}
+</view>
+</view>
+
+<view class="rowContainer">
+  <view class="rowTitle">体温：</view>
+  <view class="rowContent">
+  <radio-group bindchange="radioChange" name="tiwen">
+    <view class="test" wx:for="{{radioItems}}" wx:key="{{item.index}}">
+          <radio value="{{item.value}}" checked="{{item.checked}}"></radio>
+          <text>{{item.chooseitem}}</text>
+    </view>
+  </radio-group>
+  </view>
+</view>
+
+<view class="rowContainer">
+  <view class="rowTitle">接种情况：</view>
+  <view class="rowContent">
+  <radio-group bindchange="radioChange2" name="yimiao">
+    <view class="test" wx:for="{{radioItems2}}" wx:key="{{item.index}}">
+          <radio value="{{item.value}}" checked="{{item.checked}}"></radio>
+          <text>{{item.chooseitem}}</text>
+    </view>
+  </radio-group>
+  </view>
+</view>
+
+<view class="rowContainer">
+  <view class="rowTitle" style="height: 450rpx;">身体状况：</view>
+  <view class="rowContent">
+  <radio-group bindchange="radioChange3">
+    <view class="test" wx:for="{{radioItems3}}" wx:key="{{item.index}}">
+          <radio value="{{item.value}}" checked="{{item.checked}}"></radio>
+          <text>{{item.chooseitem}}</text>
+    </view>
+  </radio-group>
+  </view>
+</view>
+
+<view class="rowContainer1">
+  <view class="rowTitle" style="width: 30%;">姓名：</view>
+  <view class="rowContent">
+      <input class="inputStyle" focus="true" name="myname" placeholder="请输入姓名"/>
+  </view>
+</view>
+
+<view class="rowContainer1">
+  <view class="rowTitle" style="width: 30%;">当前所在地：</view>
+  <view class="rowContent">
+      <input class="inputStyle" focus="true" name="myaddr" placeholder="实例：江西省赣州市章贡区"/>
+  </view>
+</view>
+
+<view class="rowContainer commitHeight">
+<button class="btnStyle" bind:tap="onCommit" form-type="submit">提交</button>
+</view>
+
+</form>

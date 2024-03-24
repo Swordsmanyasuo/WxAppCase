@@ -1,0 +1,30 @@
+<!--pages/demo10-5/buttons.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>button编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、size='mini'迷你按钮</view>
+      <view class="button-area">
+        <button type='primary' size='mini'>主要按钮</button>
+        <button type='default' size='mini'>次要按钮</button>
+        <button type='warn' size='mini'>警告按钮</button>
+      </view>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、按钮状态</view>
+      <button>普通按钮</button>
+      <button disabled>禁用按钮</button>
+      <button loading>加载按钮</button>
+    </view>
+    <view class='demo-box' style="background-color:grey">
+      <view class='title'>3、按钮样式</view>
+      <button plain style="border:1px solid white">背景透明按钮</button>
+      <button hover-class="click-class" style="width:410rpx;font-size:9pt">hover-class点击后更改样式</button>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>4、open-type属性测试</view>
+      <button open-type="contact" size="mini">contact打开客服会话</button>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="mini">获取用户信息</button>
+    </view>
+  </view>
+</view>

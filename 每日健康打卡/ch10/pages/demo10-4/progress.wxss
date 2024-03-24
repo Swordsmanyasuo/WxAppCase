@@ -1,0 +1,9 @@
+/* pages/demo10-4/progress.wxss */
+
+progress {
+  display: block;
+  width: 100%;
+}
+.demo-box{
+  font-size: 12pt;
+}

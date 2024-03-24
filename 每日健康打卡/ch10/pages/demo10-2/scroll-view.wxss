@@ -1,0 +1,22 @@
+/* pages/demo10-2/scroll-view.wxss */
+scroll-view {
+  width: 100%;
+  height: 300rpx;
+  white-space: nowrap;
+  border: 1px solid black;
+}
+.scroll-item-y{
+  height: 300rpx;
+  line-height: 300rpx;
+  font-size: 20pt;
+  background-color: lightpink;
+}
+.scroll-item-x {
+  width: 100%;
+  height: 300rpx;
+  line-height: 300rpx;
+  font-size: 20pt;
+  background-color: lightyellow;
+  display: inline-block;
+}
+

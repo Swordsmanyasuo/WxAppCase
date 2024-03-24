@@ -1,0 +1,6 @@
+/* pages/demo10-7/textarea.wxss */
+textarea{
+  width: 100%;
+  height: 100rpx;
+  border: 1rpx solid black;
+}

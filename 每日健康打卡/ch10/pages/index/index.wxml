@@ -1,0 +1,20 @@
+<!--miniprogram/pages/user/index.wxml-->
+<view class="userinfo">
+  <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+  <open-data type="userNickName" class="userinfo-nickname"></open-data>
+  <text class="h1"> 欢迎来到第 10 章 组件</text>
+  <text class=""> 请点击下列条目跳转到对应案例测试页面</text>
+</view>
+<view class="list-view">
+  <view style="background-color:white;width:100%;">
+    <view wx:for="{{ items }}">
+      <navigator url="{{ item.path }}" class="list-itemview">
+        <view style="display:flex;margin-left: 30rpx;">
+          {{ item.text }}
+        </view>
+        <image style="width:40rpx;height:40rpx;" src="../../images/more.png"></image>
+      </navigator>
+      <view class="line-view"></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,83 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 40rpx;
+  padding: 15rpx;
+}
+
+.page-head {
+  font-size: 40rpx;
+  padding: 15rpx;
+  font-weight: bold;
+}
+
+.h1 {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 32rpx;
+  padding: 10rpx;
+  font-weight: bold;
+ /* align-self: start;  使标题靠左对齐*/
+}
+
+.content {
+  font-size: 32rpx;
+  padding: 15rpx;
+  text-align: start;
+}
+
+.demo-box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 14rpx;
+  padding:20rpx;
+  border: 1rpx solid black;
+}
+
+navigator {
+  text-align: left;
+  padding: 10rpx;
+  margin: 10rpx;
+  border-bottom: 1rpx solid silver;
+}
+
+.page-foot {
+  font-size: 30rpx;
+}
+
+.btn-area {
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.btn_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test{
+  display: flex;
+  /* text-align: start; */
+}

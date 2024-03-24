@@ -1,0 +1,27 @@
+<!--pages/demo10-10/label.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>表单组件label的简单应用</view>
+    <view class='demo-box'>
+      <view class='title'>1、for属性绑定对应的id</view>
+      <checkbox-group>
+        <view class='content'>习总书记强调，中国共产党是世界上最大的政党。大就要有大的样子。中国共产党所做的一切，就是（ ）</view>
+        <view wx:for='{{checkboxItems}}' wx:key='item{{index}}'>
+          <checkbox id='{{item.id}}' value='{{item.value}}' />
+          <label for='{{item.id}}'>{{item.chooseitem}}</label>
+        </view>
+      </checkbox-group>
+    </view>
+    <view class='demo-box'>
+      <view class='title'>2、控件直接放在label内部，不再使用for属性进行绑定</view>
+      <checkbox-group >
+        <view wx:for='{{checkboxItems}}' wx:key='item{{index}}'>
+          <label>
+            <checkbox value='{{item.value}}'/> {{item.chooseitem}}
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+</view>
+

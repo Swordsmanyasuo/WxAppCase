@@ -1,0 +1,15 @@
+<!-- pages/demo10-9/checkbox.wxml -->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>checkbox编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、下列关于栈的叙述中，错误的是（）。</view>
+      <checkbox-group bindchange='checkboxChange'>
+        <view class='test' wx:for='{{checkboxItems}}' wx:key='item{{index}}'>
+          <checkbox value='{{item.value}}' />
+          <text space="emsp">{{item.chooseitem}}</text>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+</view>

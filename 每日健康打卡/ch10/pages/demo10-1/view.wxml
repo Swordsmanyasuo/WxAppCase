@@ -1,0 +1,23 @@
+<!--pages/demo10-1/view.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='h1'>view编码测试</view>
+    <view class='demo-box'>
+      <view class='title'>1、不阻止父级容器的点击状态</view>
+      <view class='parent_view' hover-class='view_hover'>parent view
+        <view class='child_view' hover-class='view_hover'>child view</view>
+      </view>
+    </view> 
+    <view class='demo-box'>
+      <view class='title'>2、阻止父级容器的点击状态</view>
+      <view class='parent_view' hover-class='view_hover'> parent view
+        <view class='child_view' hover-start-time="3000" hover-stay-time="2000"
+        hover-class='view_hover'  hover-stop-propagation>
+          增加了hover-stop-propagation属性的child view
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
