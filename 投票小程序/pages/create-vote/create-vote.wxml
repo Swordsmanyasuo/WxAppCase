@@ -3,11 +3,11 @@
   <view class="box">
     <view class="title">
         <text>主题</text>
-        <input type="text" placeholder="请填写标题"/>
+        <input type="text" placeholder="请填写标题" bindinput="inputTitle"/>
     </view>
     <view class="my-cell">
         <text>说明</text>
-        <input type="text" placeholder="请填写说明"/>
+        <input type="text" placeholder="请填写说明"  bindinput="inputSubtitle"/>
     </view>
     <block wx:for="{{conLists}}" wx:key="index">
         <view class='template_title_list flex-x'>

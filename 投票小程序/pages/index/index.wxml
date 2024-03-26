@@ -22,10 +22,12 @@
         <text>我创建的</text>
     </view>
     </navigator>
-   <view class="item">
-    <image src="/img/canyu.png" mode=""/>
-    <text>我参与的</text>
-   </view>
+    <navigator url="/pages/pated-vote/pated-vote">
+        <view class="item">
+            <image src="/img/canyu.png" mode=""/>
+            <text>我参与的</text>
+        </view>
+    </navigator>
 </view>
 <view class="title">创建投票</view>
 <view class="editbox">

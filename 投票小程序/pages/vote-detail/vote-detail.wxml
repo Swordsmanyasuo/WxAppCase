@@ -1,6 +1,6 @@
 <image class="bg" src="/img/d8a3d5d018fa09b98fb74fc84b5de9f7.png" mode=""/>
 <view class="zdy">自定义背景</view>
-<view class="title">班长选举</view>
+<view class="title">{{data.title}}</view>
 
 <view class="share-box">
     <view class="btns">
@@ -14,7 +14,7 @@
 </view>
 
 <view class="util-box">
-    <navigator url="/pages/vote-ranking/vote-ranking">
+    <navigator url="/pages/vote-ranking/vote-ranking?title={{title}}">
         <view class="item">
             <view class="icon">
                 <image src="/img/排行榜.png" alt=""/>
@@ -58,7 +58,7 @@
     </view>
     <view class="box">
         <view class="text">
-            说明：计算机214班选举班长
+            说明：{{data.subtitle}}
         </view>
         <view class="content">
             <text>1、本次投票为匿名单选投票</text>
@@ -81,10 +81,10 @@
             <view class="my-cell">
                 <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
             <label class="label-2-text" for="{{item.name}}"><text>{{item.name}}</text></label>
-            <text class="text">1 票</text>
+            <text class="text">{{item.num}}票</text>
             </view>
             <view wx:if="{{!isvote}}" class="progress-container">
-                 <view class="progress-bar" style="width: 50%;"></view>
+                 <view class="progress-bar" style="width: {{(item.num/maxNum)*100}}%;"></view>
             </view>
         </view>
         

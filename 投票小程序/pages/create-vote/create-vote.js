@@ -1,12 +1,25 @@
+
+import voteList from '../../utils/vote'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    title:'',
+    subtitle:'',
     conLists: [], //内容标题（如：今天完成工作、备注、次日工作安排）可以添加或者删除
   },
-
+  inputTitle(e){
+    this.setData({
+      title:e.detail.value
+    })
+  },
+  inputSubtitle(e){
+    this.setData({
+      subtitle:e.detail.value
+    })
+  },
   /**
  * 添加内容
  */
@@ -57,17 +70,30 @@ Page({
  * 下一步
  */
   next(e) {
-    var _conLists = this.data.conLists;
-    console.log('这是模板内容标题数组', _conLists)
-    for (let i = 0; i < _conLists.length; i++) {
-      if (!_conLists[i]) {
+    console.log(this.data.conLists);
+    let option = this.data.conLists.map(item=>{
+      return item.modelLabel
+    })
+    wx.getStorage({
+      key: 'nickName',
+      success: (res) => {
+        let nickName = res.data
+        let data = {
+          title:this.data.title,
+          subtitle:this.data.subtitle,
+          name:nickName,
+          option,
+          info:[]
+        }
+        voteList.push(data)
         wx.showToast({
-          title: '请输入第' + `${i * 1 + 1}` + '条的模板内容标题！',
-          icon: 'none'
+          title: '创建成功',
+          icon:'success',
+          duration:1000
         })
-        return;
       }
-    }
+    });
+
   },
 
 })

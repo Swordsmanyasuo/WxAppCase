@@ -6,7 +6,8 @@
     "pages/vote-detail/vote-detail",
     "pages/vote-ranking/vote-ranking",
     "pages/vote/vote",
-    "pages/getUserInfo/getUserInfo"
+    "pages/getUserInfo/getUserInfo",
+    "pages/pated-vote/pated-vote"
   ],
   "window": {
     "navigationBarTextStyle": "black",

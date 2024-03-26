@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "",
-          "pathName": "pages/vote-detail/vote-detail",
+          "name": "pages/vote-page/vote-page",
+          "pathName": "pages/vote-page/vote-page",
           "query": "",
           "launchMode": "default",
           "scene": null
