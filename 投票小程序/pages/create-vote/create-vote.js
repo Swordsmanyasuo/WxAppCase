@@ -20,6 +20,35 @@ Page({
       subtitle:e.detail.value
     })
   },
+    /**
+ * 确定
+ */
+next(e) {
+  console.log(this.data.conLists);
+  let option = this.data.conLists.map(item=>{
+    return item.modelLabel
+  })
+  wx.getStorage({
+    key: 'nickName',
+    success: (res) => {
+      let nickName = res.data
+      let data = {
+        title:this.data.title,
+        subtitle:this.data.subtitle,
+        name:nickName,
+        option,
+        info:[]
+      }
+      voteList.push(data)
+      wx.showToast({
+        title: '创建成功',
+        icon:'success',
+        duration:1000
+      })
+    }
+  });
+
+},
   /**
  * 添加内容
  */
@@ -66,34 +95,6 @@ Page({
     })
   },
 
-  /**
- * 下一步
- */
-  next(e) {
-    console.log(this.data.conLists);
-    let option = this.data.conLists.map(item=>{
-      return item.modelLabel
-    })
-    wx.getStorage({
-      key: 'nickName',
-      success: (res) => {
-        let nickName = res.data
-        let data = {
-          title:this.data.title,
-          subtitle:this.data.subtitle,
-          name:nickName,
-          option,
-          info:[]
-        }
-        voteList.push(data)
-        wx.showToast({
-          title: '创建成功',
-          icon:'success',
-          duration:1000
-        })
-      }
-    });
 
-  },
 
 })

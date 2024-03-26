@@ -1,4 +1,4 @@
-<navigator url="/pages/vote-detail/vote-detail?title=班级评优" wx:for="{{voteList}}">
+<navigator url="/pages/vote-detail/vote-detail?title={{item.title}}" wx:for="{{voteList}}">
     <view class="item">
     <view class="top">
         <view class="info">

@@ -12,21 +12,22 @@ Page({
   onShow() {
 
     let name = wx.getStorageSync('nickName');
-    let voteList = voteList.map(item=>{
+    let data = []
+    voteList.map(item=>{
       let info = item.info
       let flag = false
-      info.map(item=>{
-        if(item.name==name){
+      info.map(item2=>{
+        if(item2.name==name){
           flag = true
         }
       })
       if(flag){
-        return item
+        data.push(item)
       }
     })
 
     this.setData({
-      voteList:voteList
+      voteList:data
     })
   },
 

@@ -28,7 +28,6 @@ Page({
     this.init(data)
   },
   init(data){
-
     let radioItems = []
     let info = data.info
     // 初始化投票选项
@@ -39,16 +38,10 @@ Page({
           num++
         }
       })
-      let checked = false
-      // 如果已经投了这个人
-      if(this.data.checked==item){
-        checked = true
-      }
       let res = {
         name:item,
         value:item,
-        num:num,
-        checked:checked
+        num:num
       }
       radioItems.push(res)
     })
