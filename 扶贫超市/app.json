@@ -10,7 +10,7 @@
     "backgroundColor": "#f8f8f8",
     "backgroundTextStyle": "dark",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "扶贫超市",
+    "navigationBarTitleText": "付陈亮-微信小程序实验4",
     "navigationBarBackgroundColor": "#48d070",
     "onReachBottomDistance": 50,
     "enablePullDownRefresh": true

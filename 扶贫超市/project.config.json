@@ -2,10 +2,6 @@
   "cloudfunctionRoot": "cloud/",
   "compileType": "miniprogram",
   "libVersion": "trial",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
   "setting": {
     "useCompilerPlugins": [
       "sass"
@@ -21,12 +17,17 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "ignoreUploadUnusedFiles": true
   },
   "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
   },
   "appid": "wx5fc63fad8fe914ff"
 }
