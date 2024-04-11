@@ -41,6 +41,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/admin/goodsAdd/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

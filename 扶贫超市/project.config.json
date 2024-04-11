@@ -1,5 +1,5 @@
 {
-  "cloudfunctionRoot": "cloud/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "compileType": "miniprogram",
   "libVersion": "trial",
   "setting": {
@@ -29,5 +29,6 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx5fc63fad8fe914ff"
+  "appid": "wx5fc63fad8fe914ff",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
 }

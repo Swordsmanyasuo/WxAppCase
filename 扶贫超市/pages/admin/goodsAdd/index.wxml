@@ -1,0 +1,68 @@
+<!--miniprogram/pages/admin/goodsAdd/index.wxml-->
+<view class="backgroundBar">
+    <view class="images-box">
+        <view class="images-box-content">
+          <block wx:for="{{imageList}}" wx:for-item="image">
+            <view class="image-item">
+            <!-- 图片右上角的删除小红叉 -->
+              <image src="../../../images/delete-img.png" id="{{index}}" class="delete-img" data-idx="{{index}}" bindtap="removeImage"></image>
+              <image class="img" src="{{image}}" data-src="{{image}}" bindtap="handleImagePreview"></image>
+            </view>
+          </block>
+        </view>
+        <!-- 图片的选择框 在图片张数大于6时不显示 -->
+        <view class="choose-box" wx:if='{{listLength<6}}'>
+          <view class="choose-box-item" bindtap="chooseImage"></view>
+        </view>
+      </view>
+</view>
+<!--miniprogram/pages/admin/goodsAdd/index.wxml 图片区域-->
+
+<!--miniprogram/pages/admin/goodsAdd/index.wxml 表单区域 -->
+<form bindsubmit="addGoods">
+  <view class="goodInfo-view">
+    <view class="goodname">
+      <view class="goodname-item1">
+        <view class="hint">标题（输入请限制在30个字符以内）</view>
+        <view class="editbtn">
+          <button formType="submit" style="width: 110rpx;font-size: small;">提交</button>
+        </view>
+      </view>
+      <view class="goodname-item2">
+        <input name="name"></input>
+      </view>
+    </view>
+    <view class="otherInfo" style="height:250rpx">
+      <view class="good-description">
+        <view class="hint">描述（输入请限制在30个字符以内）</view>
+        <textarea name="description" />
+      </view>
+    </view>
+    <view class="otherInfo">
+      <view class="otherInfo-item">
+        <text> 商品库存: </text>
+        <input name="storage"></input>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品规格: </text>
+        <input name="specification"></input>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品分类: </text>
+        <picker range="{{categoriesArray}}" bindchange="categoriesArrayChange" value="{{categoriesArrayIndex}}" mode="selector">
+          <view>{{categoriesArray[categoriesArrayIndex]}}</view>
+        </picker>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品状态: </text>
+        <picker range="{{goodStatus}}" bindchange="goodStatusChange" value="{{goodStatusIndex}}" mode="selector">
+          <view>{{goodStatus[goodStatusIndex]}}</view>
+        </picker>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品价格: </text>
+        <input style="color:red" name="price">￥</input>
+      </view>
+    </view>
+  </view>
+</form>

@@ -4,13 +4,20 @@
     "pages/cart/index",
     "pages/classify/index",
     "pages/user/index",
-    "pages/admin/index"
+    "pages/order/list/index",
+    "pages/address/list/index",
+    "pages/help/list/index",
+    "pages/about/index",
+    "pages/admin/index/index",
+    "pages/backstage/backstage/goodsSearch/index",
+    "pages/admin/goodsAdd/index",
+    "pages/admin/goodsEdit/index"
   ],
   "window": {
     "backgroundColor": "#f8f8f8",
     "backgroundTextStyle": "dark",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "付陈亮-微信小程序实验4",
+    "navigationBarTitleText": "付陈亮-微信小程序实验5",
     "navigationBarBackgroundColor": "#48d070",
     "onReachBottomDistance": 50,
     "enablePullDownRefresh": true

@@ -1,0 +1,298 @@
+/* miniprogram/pages/admin/goodsAdd/index.wxss */
+
+page {
+    background-color: #efeff4;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 10rpx;
+}
+
+.page-head {
+    font-size: 40rpx;
+    padding: 15rpx;
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 35rpx;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 32rpx;
+    padding: 15rpx;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 32rpx;
+    padding: 15rpx;
+    text-align: center;
+}
+
+.demo-box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+navigator {
+    text-align: left;
+    padding: 10rpx;
+    margin: 10rpx;
+    border-bottom: 1rpx solid silver;
+}
+
+.page-foot {
+    font-size: 30rpx;
+}
+
+.btn-area {
+    margin-top: 20rpx;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 30rpx;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-box-item {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.choose-box {
+    align-items: center;
+    float: left;
+    position: relative;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    width: 77px;
+    height: 77px;
+    border: 1px solid white;
+    left: 28rpx;
+    color: white;
+    top: 24rpx;
+
+}
+
+.choose-box:before {
+    width: 2px;
+    height: 39.5px;
+    color: white;
+    background-color: white;
+}
+
+.choose-box:after {
+    width: 39.5px;
+    height: 2px;
+}
+
+.choose-box:active {
+    border-color: #999;
+}
+
+.choose-box:active:before,
+.choose-box:active:after {
+    background-color: #999;
+}
+
+.images-box {
+    width: 80vw;
+    margin-bottom: -4px;
+    margin-right: -9px;
+    /* overflow: hidden; */
+}
+
+.image-item {
+    float: left;
+    /* margin-right: 9px; */
+    margin-bottom: 9px;
+    margin-left: 12px;
+}
+
+.img {
+    display: block;
+    width: 79px;
+    height: 79px;
+}
+
+.weui-uploader__file_status {
+    position: relative;
+}
+
+.weui-uploader__file_status:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weui-uploader__file-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.choose-box:before,
+.choose-box:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #d9d9d9;
+}
+
+.backgroundBar {
+    width: 100%;
+    height: 450rpx;
+    background-color: #48d070;
+}
+
+.goodInfo-view {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    align-items: center;
+}
+
+.myform {
+
+    width: 100%;
+}
+
+.goodname {
+    width: 90%;
+    display: flex;
+    height: 150rpx;
+    flex-direction: column;
+    border-radius: 20rpx;
+    background-color: white;
+    justify-content: center;
+}
+
+.goodname-item1 {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 40rpx; */
+    justify-content: space-around;
+}
+
+.hint {
+    font-size: 10pt;
+    color: #bababa;
+}
+
+.editbtn {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 10rpx;
+    text-align: center;
+}
+
+.editbtn #btn {
+    display: block;
+    width: 110rpx;
+    height: 50rpx;
+    margin-left: -40rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #48d070;
+    padding: 0;
+    font-weight: 0;
+    line-height: 20px;
+    min-height: 0px;
+}
+
+.goodname-item2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.otherInfo {
+    margin-top: 30rpx;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 20rpx;
+    background-color: white;
+    height: 350rpx;
+}
+
+.otherInfo-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30rpx;
+    border-bottom: 1px solid #bababa;
+    align-items: center;
+    height: 80rpx;
+}
+
+.otherInfo-item text {
+    color: #bababa;
+}
+
+.otherInfo-item input,
+.otherInfo-item picker {
+    margin-left: 30rpx;
+}
+
+.otherInfo-item picker {
+    width: 300rpx;
+}
+
+.good-description {
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+    width: 100%;
+    height: 300rpx;
+}
+
+.good-description textarea {
+    margin-top: 20rpx;
+    height: 100px;
+}
+
+
+
+.delete-img {
+    width: 30rpx;
+    height: 30rpx;
+    position: relative;
+
+    display: block;
+    right: -125rpx;
+    top: 30rpx;
+
+}

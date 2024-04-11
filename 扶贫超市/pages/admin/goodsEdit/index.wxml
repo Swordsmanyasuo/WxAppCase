@@ -1,0 +1,75 @@
+<!-- miniprogram/pages/admin/goodsAdd/index.wxml 图片选择部分 -->
+<view class="backgroundBar"></view>
+<view class='container'>
+  <include src='../../commons/header.wxml' />
+  <view class='page-body'>
+    <view class='demo-box'>
+      <view class="images-box">
+        <view class="images-box-content">
+          <block wx:for="{{imageList}}" wx:for-item="image">
+            <view class="image-item">
+              <!-- 当isDisabled为false时代表可编辑 wx:if标签控制图片右上角的红叉是否出现 -->
+              <image src="../../../images/delete-img.png" wx:if="{{!isDisabled}}" id="{{index}}" class="delete-img" data-idx="{{index}}" bindtap="removeImage"></image>
+              <image class="img" src="{{image}}" data-src="{{image}}" bindtap="handleImagePreview"></image>
+            </view>
+          </block>
+        </view>
+        <view class="choose-box" wx:if='{{listLength<6&&!isDisabled}}'>
+          <view class="choose-box-item" bindtap="chooseImage"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<form bindsubmit="getInfo" class="myform">
+  <view class="goodInfo-view">
+    <view class="goodname">
+      <view class="goodname-item1">
+        <view class="hint">标题（输入请限制在30个字符以内）</view>
+        <view class="editbtn" wx:if='{{isDisabled}}' bindtap="changeIsDisabled">
+          <button id="btn" style="font-size: small;">编辑</button>
+        </view>
+        <view class="editbtn" wx:else>
+          <button id="btn" formType="submit" style="font-size: small;">保存</button>
+        </view>
+      </view>
+      <view class="goodname-item2">
+        <input disabled="{{isDisabled}}" auto-focus="{{isDisabled}}" name="name" value="{{name}}">{{name}}</input>
+      </view>
+    </view>
+    <view class="otherInfo" style="height:250rpx">
+      <view class="good-description">
+        <view class="hint">描述（输入请限制在30个字符以内）</view>
+        <textarea name="description" disabled="{{isDisabled}}" value="{{description}}" />
+      </view>
+    </view>
+    <view class="otherInfo">
+      <view class="otherInfo-item">
+        <text> 商品库存: </text>
+        <input disabled="{{isDisabled}}" name="storage" value="{{storage}}">{{storage}}</input>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品规格: </text>
+        <input disabled="{{isDisabled}}" name="specification" value="{{specification}}">{{specification}}</input>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品分类: </text>
+        <picker disabled="{{isDisabled}}" range="{{categoriesArray}}" bindchange="categoriesArrayChange" value="{{categoriesArrayIndex}}" mode="selector">
+          <view>{{categoriesArray[categoriesArrayIndex]}}</view>
+        </picker>
+      </view>
+      <view class="otherInfo-item">
+        <text> 商品状态: </text>
+        <picker disabled="{{isDisabled}}" range="{{goodStatus}}" bindchange="goodStatusChange" value="{{goodStatusIndex}}" mode="selector">
+          <view>{{goodStatus[goodStatusIndex]}}</view>
+        </picker>
+      </view>
+
+      <view class="otherInfo-item">
+        <text> 商品价格: </text>
+        <input disabled="{{isDisabled}}" style="color:red" name="price" value="{{price}}">￥{{price}}</input>
+      </view>
+    </view>
+  </view>
+</form>
