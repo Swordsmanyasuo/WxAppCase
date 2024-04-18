@@ -1,0 +1,2 @@
+<!--pages/detail/detail.wxml-->
+<web-view src="{{detailData.baike_info.baike_url}}"></web-view>

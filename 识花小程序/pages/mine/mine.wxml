@@ -1,0 +1,26 @@
+<!--pages/mine/mine.wxml-->
+<view class="content">
+	<view wx:for="{{record}}" class="recordItem">
+		<view class="recordImage">
+			<image src="{{record[index].image}}" mode="" />
+		</view>
+		<!-- 操作 -->
+		<view class="btnGroup">
+			<!-- 查看记录 -->
+			<view type="primary" class="btn btn1" data-index="{{index}}" bindtap="lookDetail">
+				<view class="photoImage">
+					<image src="../../image/look.png" mode="" />
+				</view>
+				<view class="lookText">查看记录</view>
+			</view>
+			<!-- 删除记录 -->
+			<view type="primary" class="btn btn2" data-index="{{index}}" bindtap="deleteRecord">
+				<view class="photoImage">
+					<image src="../../image/delete.png" mode="" />
+				</view>
+				<view class="deleteText">删除记录</view>
+			</view>
+		</view>
+	</view>
+
+</view>

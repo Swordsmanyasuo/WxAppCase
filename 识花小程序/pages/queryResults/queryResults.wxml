@@ -1,0 +1,29 @@
+<!--pages/queryResults/queryResults.wxml-->
+<view class="content">
+	<scroll-view scroll-y="">
+	<!-- 识别的图片 -->
+	<view class="flowerImage">
+		<image src="{{image}}" mode=""/>
+	</view>
+	<!-- 结果展示 -->
+	<view>
+		<view class="resultItem" wx:for="{{result}}" bindtap="lookDetail" data-index="{{index}}">
+			<view class="title">{{result[index].name}}</view>
+			<view class="introduction">
+				<!-- 图片 -->
+				<view class="resultImage">
+					<image src="{{result[index].baike_info.image_url}}" mode=""/>
+				</view>
+				<view>
+					<!-- 介绍 -->
+					<view class="rightText">{{result[index].baike_info.description}}</view>
+					<view class="tip">
+						<view class="similarity">相似度：{{result[index].score}}</view>
+						<view class="detail">查看详情</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>
+</view>

@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view>
+	<!-- 花朵介绍 -->
+	<view>
+		<!-- 图片展示 -->
+		<view class="flowerImage">
+			<image src="{{image}}" mode="" />
+		</view>
+		<view class="description">
+			<view class="title">曼陀罗</view>
+			<view class="text">
+				曼陀罗（Datura stramonium Linn.），别名曼茶罗、醉心花、狗核桃，茄科曼陀罗属植物，分布于世界各大洲。曼陀罗生长于住宅旁、路边或草地上，喜温暖、向阳及排水良好的砂质壤土。其高0.5~1.5米，茎粗壮，圆柱状，淡绿色或带紫色，下部木质化。
+			</view>
+		</view>
+	</view>
+	<!-- 识花功能 -->
+	<view class="btnGroup">
+		<!-- 上传图片 -->
+		<button class="btn" type="primary" bindtap="takePicture">
+			<view class="photoImage">
+				<image src="../../image/camera.png" mode="" />
+			</view>
+			<view>上传图片</view>
+		</button>
+		<button class="btn" type="primary" bindtap="plantIdentify">
+			<view class="photoImage">
+				<image src="../../image/identify.png" mode="" />
+			</view>
+			<view>开始识别</view>
+		</button>
+	</view>
+</view>
